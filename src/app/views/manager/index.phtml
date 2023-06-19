@@ -1,0 +1,29 @@
+<a href="/manager/menu" class = 'btn btn-success d-flex float-right mr-5'>Menu</a>
+<h3 class='text-center mt-5'>Add Item in Menu</h3>
+<form action="/manager/addItem" method="POST" class='m-5'>
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+        <input type="text" name='name' class="form-control" />
+        <label class="form-label">Name</label>
+    </div>
+
+    <!-- Price input -->
+    <div class="form-outline mb-4">
+        <input type="number" name='price' class="form-control" />
+        <label class="form-label">Price</label>
+    </div>
+
+    <!-- cuisine input -->
+    <div class="form-outline mb-4">
+        <input type='text' class="form-control" name='cuisine' />
+        <label class="form-label">Cuisine</label>
+    </div>
+
+    <!-- restaurant id input -->
+    <div class="form-outline mb-4">
+        <input type='text' class="form-control" name='restID' />
+        <label class="form-label">Restaurant ID</label>
+    </div>
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4 col-2">Add Item in Menu</button>
+</form>

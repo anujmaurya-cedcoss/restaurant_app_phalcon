@@ -1,0 +1,19 @@
+<h1 class='text-center'>List of all orders</h1>
+<div class='row mt-5'>
+    <?php
+    $data = json_decode($data, true);
+    foreach ($data as $value) {
+        // echo "<div class=\"card border-success mb-3 mx-3\" style=\"max-width: 18rem;\">
+        // <div class=\"card-header bg-transparent border-success\">$value[name]</div>
+        // <div class=\"card-body text-success\">
+        //     <p class=\"card-text\"><strong class = 'text-black'>Cuisine : </strong>$value[cuisine]</p>
+        //     <p class=\"card-text\"><strong class = 'text-black'>Price : </strong>$value[price]</p>
+        //     <p class=\"card-text\"><strong class = 'text-black'>Restaurant ID : </strong>$value[restID]</p>
+        // </div>
+        // <div class=\"card-footer bg-transparent border-success\">
+        //     <a href='/manager/delete?id=$value[itemID]' class = 'btn btn-danger'>Delete</a>
+        // </div>
+        // </div>";
+    }
+    ?>
+</div>
