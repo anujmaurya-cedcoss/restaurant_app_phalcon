@@ -30,8 +30,7 @@ class UsersController extends Controller
 
         ];
         $output = $this->mongo->orders->insertOne($arr);
-        $success = $output->getInsertedCount();
-        if ($success > 0) {
+        if ($output->getInsertedCount() > 0) {
             $this->response->redirect("/users/review?id=$id");
         } else {
             echo "<h3>There was some error</h3>";
